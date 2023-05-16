@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "763868360994",
+    "project_id": "nao-f-89a7e",
+    "storage_bucket": "nao-f-89a7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763868360994:android:77651ecbd6eeb4a9abb57b",
+        "android_client_info": {
+          "package_name": "com.example.naoflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763868360994-vfr20uaeg8ddn35qf04ll9htnf4i2ha8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu5fCFRT98xr5hPUo07EUzN64ToBIPl6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763868360994-vfr20uaeg8ddn35qf04ll9htnf4i2ha8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
