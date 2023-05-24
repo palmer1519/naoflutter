@@ -1,6 +1,12 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:naoflutter/screens/create_product.dart';
+import 'package:naoflutter/screens/customers.dart';
+import 'package:naoflutter/screens/help.dart';
+import 'package:naoflutter/screens/inventory.dart';
+import 'package:naoflutter/screens/sale.dart';
+import 'package:naoflutter/screens/shope.dart';
 
 
 class CardTable extends StatelessWidget {
@@ -10,20 +16,45 @@ class CardTable extends StatelessWidget {
       children: [
         TableRow(
           children: [
-            _SigleCard(color: Colors.teal.shade300, icon: Icons.inventory_rounded, text: "Inventario"),
-            _SigleCard(color: Colors.purple .shade300, icon: Icons.sell_rounded, text: "Venta")
+            InkWell(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Inventory()));
+              },
+              child: _SigleCard(color: Colors.teal.shade300, icon: Icons.inventory_rounded, text: "Inventario")
+              ),
+            InkWell(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Sale()));
+              },
+              child: _SigleCard(color: Colors.purple .shade300, icon: Icons.sell_rounded, text: "Venta"))
           ]
         ),
         TableRow(
           children: [
-            _SigleCard(color: Colors.blue.shade300, icon: Icons.shopping_cart_rounded, text: "Compra"),
-            _SigleCard(color: Colors.brown.shade300, icon: Icons.create_rounded, text: "Crear Producto")
+            InkWell(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Shope()));
+              },
+              child: _SigleCard(color: Colors.blue.shade300, icon: Icons.shopping_cart_rounded, text: "Compra")),
+            InkWell(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> CreateProduct()));
+              },
+              child: _SigleCard(color: Colors.brown.shade300, icon: Icons.create_rounded, text: "Crear Producto"))
           ]
         ),
         TableRow(
           children: [
-            _SigleCard(color: Colors.red.shade300, icon: Icons.supervised_user_circle_rounded, text: "Clientes"),
-            _SigleCard(color: Colors.pinkAccent, icon: Icons.help_outline_rounded, text: "Ayuda")
+            InkWell(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Customers()));
+              },
+              child: _SigleCard(color: Colors.red.shade300, icon: Icons.supervised_user_circle_rounded, text: "Cliente")),
+            InkWell(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Help()));
+              },
+              child: _SigleCard(color: Colors.pinkAccent, icon: Icons.help_outline_rounded, text: "Ayuda"))
           ]
         ),
       ],

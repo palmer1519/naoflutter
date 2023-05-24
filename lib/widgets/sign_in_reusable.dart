@@ -11,12 +11,27 @@ Image logoWidget(String imageName){
   );
 }
 
-TextField reusableTextField (String text, IconData icon, bool isPassWordType,
+TextFormField reusableTextField (String text, IconData icon, bool isPassWordType,
   TextEditingController controller){
-    return TextField(
+  final TextEditingController _email = TextEditingController();
+    return TextFormField(
       controller: controller,
       obscureText: isPassWordType,
       enableSuggestions: !isPassWordType,
+      validator: (value) {
+          if (value!.isEmpty) {
+            return ("Debe ingresar un email");
+          }
+          // reg expression for email validation
+          if (!RegExp("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]")
+              .hasMatch(value)) {
+            return ("Debe ingresar un email válido");
+          }
+          return null;
+        },
+        onSaved: (value) {
+          _email.text = value!;
+        },
       autocorrect: !isPassWordType,
       cursorColor: Colors.white,
       style: TextStyle(color: Colors.white.withOpacity(0.9)),

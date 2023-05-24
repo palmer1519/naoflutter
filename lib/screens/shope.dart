@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:naoflutter/widgets/background_2.dart';
 
 
-class Sale extends StatelessWidget {
-  const Sale({super.key});
+class Shope extends StatelessWidget {
+  const Shope({super.key});
 
   @override
 
@@ -15,7 +15,7 @@ class Sale extends StatelessWidget {
             Background2(),
 
              Center(
-              child: Text("Venta"))
+              child: Text("Compra"))
           ],
         )
     );

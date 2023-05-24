@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:naoflutter/widgets/background_2.dart';
+import 'package:naoflutter/widgets/image.dart';
+import 'package:naoflutter/widgets/privacy_page.dart';
+import 'package:naoflutter/widgets/signin_page.dart';
+import 'package:naoflutter/widgets/signup_page.dart';
 
-import '../widgets/background.dart';
-import '../widgets/background_2.dart';
-import '../widgets/image.dart';
-import '../widgets/privacy_page.dart';
-import '../widgets/signin_page.dart';
-import '../widgets/signup_page.dart';
+
 //import 'package:flutter/services.dart';
 
 class SplassScreen extends StatelessWidget {
@@ -41,36 +41,6 @@ class Page1 extends StatelessWidget {
         MainContent(),
 
         //Buttom Privacy
-        
-        Center(
-          child: 
-          TextButton(
-            onPressed: () {
-              showAboutDialog(
-                context: context,
-                applicationName: 'NAO',
-                applicationVersion: '1.0.0',
-                applicationLegalese:
-                    'nao.com © ${DateTime.now().year} NAO',
-                applicationIcon: const FlutterLogo(),
-                children: [
-                  TextButton(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute<void>(
-                          builder: (context) => PrivacyPage(),
-                        ),
-                      );
-                    },
-                    child: const Text('Politica de privacidad'),
-                  ),
-                ],
-              );
-            },
-            child: 
-            const Text('Terminos & Privacidad'),
-          ),
-        )
         
       ],
     );
@@ -147,16 +117,17 @@ class buttomPrivacy extends StatelessWidget {
       body: Stack(
         children: [
           Center(
-            child: TextButton(
-            onPressed: () {
-              showAboutDialog(
-                context: context,
-                applicationName: 'NAO',
-                applicationVersion: '1.0.0',
-                applicationLegalese:
+            child: 
+            TextButton(
+              onPressed: () {
+                showAboutDialog(
+                  context: context,
+                  applicationName: 'NAO',
+                  applicationVersion: '1.0.0',
+                  applicationLegalese:
                     'nao.com © ${DateTime.now().year} NAO',
-                applicationIcon: const FlutterLogo(),
-                children: [
+                  applicationIcon: const FlutterLogo(),
+                  children: [
                   TextButton(
                     onPressed: () {
                       Navigator.of(context).push(
@@ -170,7 +141,8 @@ class buttomPrivacy extends StatelessWidget {
                 ],
               );
             },
-            child: const Text('Terminos & Privacidad'),
+            child: 
+             const Text('Terminos & Privacidad'),
                   ),
           )
 
@@ -180,6 +152,8 @@ class buttomPrivacy extends StatelessWidget {
   }
 }
  
+
+
 /* 
 class _Buttom extends StatelessWidget {
   @override
