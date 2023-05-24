@@ -11,8 +11,9 @@ class PrivacyPage extends StatelessWidget {
         title: const Text('Politica de privacidad'),
       ),
       body: const Markdown(
-        data: '''
-ISMA-8 ("nosotros" o "nuestro") opera la aplicación móvil NAO y el sitio web isma.com (denominados conjuntamente el "Servicio").
+        data:
+        '''
+JM Technology ("nosotros" o "nuestro") opera la aplicación móvil NAO (denominados conjuntamente el "Servicio").
 
 Esta página le informa de nuestras políticas relativas a la recopilación, uso y divulgación de datos personales cuando utiliza nuestro Servicio y de las opciones que tiene asociadas a esos datos.
 
@@ -38,7 +39,7 @@ También podemos recopilar información que su navegador envía cada vez que vis
 
 2. Uso de los datos
 
-ISMA utiliza los datos recogidos para diversos fines:
+JM Technology utiliza los datos recogidos para diversos fines:
 
 - Para proporcionar y mantener nuestro Servicio
 - Para notificarle cambios en nuestro Servicio
@@ -53,7 +54,7 @@ ISMA utiliza los datos recogidos para diversos fines:
 Podemos revelar sus Datos Personales si creemos de buena fe que dicha acción es necesaria para:
 
 - Cumplir con una obligación legal
-- Proteger y defender los derechos o la propiedad de ISMA
+- Proteger y defender los derechos o la propiedad de JM Technology
 - Prevenir o investigar posibles irregularidades en relación con el Servicio
 - Proteger la seguridad personal de los usuarios del Servicio o del público en general
 - Proteger frente a la responsabilidad legal

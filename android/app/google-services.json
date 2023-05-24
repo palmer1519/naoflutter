@@ -29,6 +29,13 @@
             {
               "client_id": "763868360994-vfr20uaeg8ddn35qf04ll9htnf4i2ha8.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "763868360994-sur4eml13483h1n1af2nbiictpca3eip.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.naoflutter"
+              }
             }
           ]
         }
